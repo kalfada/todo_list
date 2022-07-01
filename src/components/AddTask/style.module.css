@@ -1,21 +1,19 @@
 .container {
-    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
 
 .addBtn {
-    position: relative;
-    left: 70px;
-    /* left: calc(5vw + 70px); */
+    position: absolute;
+    left: calc(20vw - 48px);
     font-size: 20px;
     z-index: 3;
     width: 70px;
-    height: 52.5px;
+    height: 53px;
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
-    background-color: black;
+    background-color: #416a59;
     color: #feffff;
     cursor: pointer;
     box-shadow: -1px 0px 4px 0px rgba(0, 0, 0, 0.45);
@@ -25,13 +23,15 @@
 
 .addBtn:hover {
     background-color: #feffff;
-    color: black;
+    color: #416a59;
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .taskInput {
     position: relative;
     font-size: 20px;
-    width: 70vw;
+    width: 60vw;
     padding: 15px;
     padding-left: 80px;
     border: none;
