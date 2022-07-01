@@ -1,23 +1,44 @@
-.container{
+.container {
+    padding-top: 50px;
     display: flex;
     justify-content: center;
 }
 
-.addBtn{
-    width: 50px;
+.addBtn {
     position: relative;
-    border: 0.5px solid black;
-    left: 24px;
+    left: 70px;
+    /* left: calc(5vw + 70px); */
     font-size: 20px;
+    z-index: 3;
+    width: 70px;
+    height: 52.5px;
+    border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
+    background-color: black;
+    color: #feffff;
     cursor: pointer;
+    box-shadow: -1px 0px 4px 0px rgba(0, 0, 0, 0.45);
+    transition: 0.2s;
+
 }
 
-.taskInput{
-    border: 0.5px solid black;
-    padding: 10px;
-    padding-left: 30px;
-    width: 600px;
+.addBtn:hover {
+    background-color: #feffff;
+    color: black;
+}
+
+.taskInput {
+    position: relative;
+    font-size: 20px;
+    width: 70vw;
+    padding: 15px;
+    padding-left: 80px;
+    border: none;
     border-radius: 15px;
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.45);
+}
+
+.taskInput:focus {
+    outline: none !important;
 }

@@ -1,10 +1,18 @@
+import { useState } from 'react'
 import style from './style.module.css'
 
 export default function AddTask() {
-    return(
-        <div className={style.container}>
-            <button className={style.addBtn}>+</button>
-            <input className={style.taskInput} type="text" name="task" />
-        </div>
+    const [task, setTask] = useState('')
+
+    const addTask = event => {
+        event.preventDefault()
+        console.log(task);
+    }
+
+    return (
+        <form className={style.container} onSubmit={addTask}>
+            <input type="submit" value="+" className={style.addBtn} />
+            <input className={style.taskInput} type="text" name="task" onChange={e => setTask(e.target.value)} />
+        </form>
     )
 }
