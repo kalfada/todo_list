@@ -1,12 +1,13 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { tasksListContext } from "../../App"
 
 export default function TaskList() {
-    const [tasks, setTasks] = useState([{name: 'go to'}])
+    const { tasksList } = useContext(tasksListContext)
 
-    return(
+    return (
         <div>
-            {tasks.map(item=>{
-                <div>{item.name}</div>
+            {tasksList.map(item => {
+                <div>{item.taskName}daniel</div>
             })}
         </div>
     )
