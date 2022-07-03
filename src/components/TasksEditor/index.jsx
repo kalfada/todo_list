@@ -13,6 +13,12 @@ export default function TasksEditor() {
         localStorage.setItem('tasksList', JSON.stringify(tmpTasksList))
     }
 
+    const markAsDone = (event, id) => {
+        let tmpTasksList = structuredClone(tasksList)
+        setTasksList(tmpTasksList)
+        localStorage.setItem('tasksList', JSON.stringify(tmpTasksList))
+    }
+
     return (
         <div className={style.tasksEditor}>
             {tasksList.map((item, index) =>
@@ -25,7 +31,7 @@ export default function TasksEditor() {
                                     style.firstBtn
                                     : ''
                         }`}><FontAwesomeIcon icon={faX} /></button>
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" checked={item.isDone} onClick={e => markAsDone(e, item.id)}/>
                     {item.taskName}
                 </div>
             ).reverse()}
