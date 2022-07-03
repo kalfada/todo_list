@@ -1,7 +1,7 @@
 import './App.css';
 import Header from './components/Header';
 import AddTask from './components/AddTask';
-import TasksList from './components/TasksList'
+import TasksEditor from './components/TasksEditor'
 import { createContext, useEffect, useState } from 'react';
 
 export const tasksListContext = createContext()
@@ -18,7 +18,7 @@ function App() {
       <Header />
       <tasksListContext.Provider value={{ tasksList, setTasksList }}>
         <AddTask />
-        <TasksList />
+        <TasksEditor />
       </tasksListContext.Provider>
     </div>
   );

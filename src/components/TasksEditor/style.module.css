@@ -1,0 +1,62 @@
+.tasksEditor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.singleTask {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    width: 67vw;
+    height: 30px;
+    border-bottom: 1px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.singleTask:first-child{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.singleTask:last-child{
+    border: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.deleteBtn{
+    position: relative;
+    right: 10px;
+    cursor: pointer;
+    height: 50px;
+    width: 40px;
+    border: none;
+    background-color: #416a59;
+    color: white;
+    transition: 0.2s;
+}
+
+.firstBtn{
+    border-top-left-radius: 15px;
+}
+
+.lastBtn{
+    border-bottom-left-radius: 15px;
+}
+
+.justOneBtn{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+.deleteBtn:hover{
+    background-color: white;
+    color: #416a59;
+    font-size: 20px;
+}
