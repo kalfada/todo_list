@@ -1,4 +1,4 @@
-.confetti{
+.confetti {
     position: fixed;
     z-index: 0;
 }
@@ -26,17 +26,18 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.singleTask:first-child{
+.singleTask:first-child {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 
-.singleTask:last-child{
+.singleTask:last-child {
     border: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-.deleteBtn{
+
+.deleteBtn {
     position: relative;
     right: 10px;
     cursor: pointer;
@@ -48,21 +49,21 @@
     transition: 0.2s;
 }
 
-.firstBtn{
+.firstBtn {
     border-top-left-radius: 15px;
 }
 
-.lastBtn{
+.lastBtn {
     border-bottom-left-radius: 15px;
 }
 
-.justOneBtn{
+.justOneBtn {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 
 }
 
-.deleteBtn:hover{
+.deleteBtn:hover {
     background-color: white;
     color: #416a59;
     font-size: 20px;
@@ -79,17 +80,19 @@
     width: 31px;
     padding: 10px;
     margin-right: 12px;
-    border: 3px solid #D6D6D6;
+    border: 3px solid #b48484;
     border-radius: 50%;
     cursor: pointer;
-    background: linear-gradient(90deg, #F2F2F2 50%, #F2F2F2 50%);
+    background: radial-gradient(circle at center, #f2f2f2 50%, transparent 50%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px 15px;
+    transition: 0.2s;
 }
 
-.checkbox:checked{
-    background: linear-gradient(90deg, black 50%, black 50%);
+.checkbox:checked {
+    border: 3px solid #D6D6D6;
+    background: radial-gradient(circle at center, green 50%, transparent 50%);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px 15px;
