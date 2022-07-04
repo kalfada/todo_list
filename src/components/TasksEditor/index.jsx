@@ -26,7 +26,6 @@ export default function TasksEditor() {
         tmpTasksList[index].isDone = !tmpTasksList[index].isDone
         setTasksList(tmpTasksList)
         localStorage.setItem('tasksList', JSON.stringify(tmpTasksList))
-        console.log(windowSize);
         if (tmpTasksList[index].isDone) {
             setNumberOfPieces(200)
             setTimeout(() => setNumberOfPieces(0), 2000)
@@ -52,7 +51,7 @@ export default function TasksEditor() {
                                         style.firstBtn
                                         : ''
                             }`}><FontAwesomeIcon icon={faX} /></button>
-                        <input type="checkbox" checked={item.isDone} onClick={() => markAsDone(index)} />
+                        <input type="checkbox" checked={item.isDone} onChange={() => markAsDone(index)} className={style.checkbox} />
                         <div className={`${item.isDone ? style.done : ''}`}>{item.taskName}</div>
                     </div>
                 ).reverse()}
