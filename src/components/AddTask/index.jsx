@@ -11,17 +11,19 @@ export default function AddTask() {
 
     const addTask = event => {
         event.preventDefault()
-        let tmpTasksList = structuredClone(tasksList)
-        tmpTasksList.push({
-            id: uuid(),
-            taskName: task,
-            date: Date.now(),
-            isDone: false
-        })
-        setTasksList(tmpTasksList)
-        localStorage.setItem('tasksList', JSON.stringify(tmpTasksList))
-        setTask('')
-        event.target.reset()
+        if (task.trim()) {
+            let tmpTasksList = structuredClone(tasksList)
+            tmpTasksList.push({
+                id: uuid(),
+                taskName: task,
+                date: Date.now(),
+                isDone: false
+            })
+            setTasksList(tmpTasksList)
+            localStorage.setItem('tasksList', JSON.stringify(tmpTasksList))
+            setTask('')
+            event.target.reset()
+        }
     }
 
     return (
