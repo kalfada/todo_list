@@ -23,13 +23,6 @@
 
 }
 
-.addBtn:hover {
-    background-color: #feffff;
-    color: #416a59;
-    font-size: 25px;
-    font-weight: 700;
-}
-
 .taskInput {
     position: relative;
     font-size: 20px;
@@ -44,4 +37,13 @@
 
 .taskInput:focus {
     outline: none !important;
+}
+
+@media (min-width : 800px) {
+    .addBtn:hover {
+        background-color: #feffff;
+        color: #416a59;
+        font-size: 25px;
+        font-weight: 700;
+    }
 }

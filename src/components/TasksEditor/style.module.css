@@ -63,12 +63,6 @@
 
 }
 
-.deleteBtn:hover {
-    background-color: white;
-    color: #416a59;
-    font-size: 20px;
-}
-
 .done {
     text-decoration: line-through;
 }
@@ -96,4 +90,12 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 15px 15px;
+}
+
+@media (min-width : 800px) {
+    .deleteBtn:hover {
+        background-color: white;
+        color: #416a59;
+        font-size: 20px;
+    }
 }
