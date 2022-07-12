@@ -15,8 +15,6 @@
 }
 
 .addBtn {
-    /* position: absolute; */
-    /* left: calc(20vw - 48px); */
     font-size: 20px;
     z-index: 3;
     width: 70px;
@@ -33,16 +31,12 @@
 }
 
 .taskInput {
-    /* position: relative; */
     font-size: 20px;
     width: 60vw;
     padding: 15px;
-    padding-left: 80px;
     border: none;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-
 }
 
 .taskInput:focus {
