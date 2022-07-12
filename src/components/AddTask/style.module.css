@@ -18,7 +18,7 @@
     font-size: 20px;
     z-index: 3;
     width: 70px;
-    height: 53px;
+    height: 54px;
     border: none;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -33,6 +33,7 @@
 .taskInput {
     font-size: 20px;
     width: 60vw;
+    height: 24px;
     padding: 15px;
     border: none;
     border-top-right-radius: 15px;
