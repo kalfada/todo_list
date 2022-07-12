@@ -28,11 +28,12 @@ export default function AddTask() {
 
     return (
         <form className={style.container} onSubmit={addTask}>
-
-            <button type='submit' className={style.addBtn}>
-                <FontAwesomeIcon icon={faPlus} />
-            </button>
-            <input className={style.taskInput} type="text" name="task" onChange={e => setTask(e.target.value)} />
+            <span className={style.component}>
+                <button type='submit' className={style.addBtn}>
+                    <FontAwesomeIcon icon={faPlus} />
+                </button>
+                <input className={style.taskInput} type="text" name="task" onChange={e => setTask(e.target.value)} />
+            </span>
         </form>
     )
 }
